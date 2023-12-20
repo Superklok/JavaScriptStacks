@@ -149,3 +149,39 @@ For operations `"C"` and `"D"`, there will always be at least one previous score
 `};`
 <br/>
 <br/>
+
+## Explanation:
+
+I've defined a function called `calPoints` that takes an array of strings, `ops`, as input. The purpose of this function is to perform a series of operations on a stack and return the sum of all the values in the stack.
+<br/>
+
+Inside the function, an empty array called `stack` is created to store the values.
+<br/>
+
+A `for` loop is used to iterate through each element in the `ops` array. Within the loop, a `switch` statement is used to handle different cases based on the value of `ops[i]`.
+<br/>
+
+If `ops[i]` is equal to 'D', the code inside the `case 'D'` block is executed. It retrieves the last element from the `stack` using `stack.length - 1`, multiplies it by 2, and pushes the result back into the `stack`.
+<br/>
+
+If `ops[i]` is equal to 'C', the code inside the `case 'C'` block is executed. It removes the last element from the `stack` using the `pop()` method.
+<br/>
+
+If `ops[i]` is equal to '+', the code inside the `case '+'` block is executed. It retrieves the second last element from the `stack` using `stack.length - 2`, retrieves the last element using `stack.length - 1`, adds them together, and pushes the result back into the `stack`.
+<br/>
+
+If none of the above cases match, the code inside the `default` block is executed. It converts the string `ops[i]` to a number using `Number(ops[i])` and pushes it into the `stack`.
+<br/>
+
+After the loop finishes, the `stack` is returned.
+<br/>
+
+The `reduce` method is called on the `stack` array to calculate the sum of all the values. The initial value is set to 0.
+<br/>
+
+The final sum is returned as the result of the `calPoints` function.
+<br/>
+
+In summary, this function performs various operations (double, remove, add, or push a number) on a stack based on the values in the `ops` array. It maintains the stack and calculates the sum of all the values in the stack, which is then returned as the output of the function.
+<br/>
+<br/>

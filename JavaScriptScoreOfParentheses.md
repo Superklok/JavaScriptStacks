@@ -69,3 +69,30 @@ The score of a balanced parentheses string is based on the following rule:
 `};`
 <br/>
 <br/>
+
+## Explanation:
+
+I've built a function called `scoreOfParentheses` that takes a string `s` as input. The purpose of this function is to calculate the score of a valid parentheses sequence represented by the string `s`. The score is based on the depth of the parentheses.
+<br/>
+
+Inside the function, two variables `score` and `depth` are initialized to 0.
+<br/>
+
+A `for` loop is used to iterate through each character of the string `s`. Within the loop, various conditions are checked to determine the score calculation.
+<br/>
+
+If the current character is an opening parenthesis `'('`, the `depth` variable is incremented by 1 to indicate an increase in the depth of the parentheses.
+<br/>
+
+If the current character is a closing parenthesis `')'` and the previous character is an opening parenthesis `'('`, it means a valid pair of parentheses is found. In this case, the score is calculated by adding `1` shifted left by `depth-1` to the `score` variable. The `depth` variable is then decremented by 1 to indicate a decrease in the depth.
+<br/>
+
+If none of the above conditions are met, it means the current character is a closing parenthesis and the previous character is also a closing parenthesis. In this case, the `depth` variable is decremented by 1 to indicate a decrease in the depth.
+<br/>
+
+After the loop ends, the final calculated `score` is returned as the output of the function.
+<br/>
+
+In summary, this function calculates the score of a valid parentheses sequence by keeping track of the depth of the parentheses. The score is calculated based on the depth, with higher depths contributing more to the score.
+<br/>
+<br/>

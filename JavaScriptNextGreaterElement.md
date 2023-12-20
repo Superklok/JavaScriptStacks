@@ -74,3 +74,30 @@ All the integers of `nums1` also appear in `nums2`.
 `};`
 <br/>
 <br/>
+
+## Explanation:
+
+I've coded a function called `nextGreaterElement` that takes in two arrays `nums1` and `nums2`. The purpose of this function is to find the next greater element for each element in `nums1` from the corresponding position in `nums2` and return a new array with those values.
+<br/>
+
+Inside the function, an empty object called `map` and an empty array called `stack` are initialized.
+<br/>
+
+A `forEach` loop is used to iterate over each element `n` in the `nums2` array. Within the loop, it checks if the `stack` array is not empty and if the last element in the `stack` array is smaller than `n`.
+<br/>
+
+If the condition is true, it means that the next greater element for the last element in the `stack` array has been found. In this case, the function pops the last element from the `stack` array and assigns `n` as the value for the popped element in the `map` object.
+<br/>
+
+After that, the function pushes `n` into the `stack` array.
+<br/>
+
+The loop continues until all elements in the `nums2` array have been processed. By the end of the loop, the `map` object contains the next greater element for each element in `nums2`.
+<br/>
+
+Finally, a new array is returned by using the `map` method on the `nums1` array. Within the `map` function, it checks if the current element `n` exists as a key in the `map` object. If it does, the corresponding value from the `map` object is returned. Otherwise, `-1` is returned.
+<br/>
+
+In summary, this function finds the next greater element for each element in `nums1` from the corresponding position in `nums2`. It achieves this by using a stack to keep track of elements in `nums2` and an object to store the next greater elements. The resulting values are returned as a new array.
+<br/>
+<br/>

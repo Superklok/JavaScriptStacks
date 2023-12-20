@@ -1,4 +1,4 @@
-# JavaScript Backspace String Compare
+# JavaScript Valid Parentheses
 
 ## Challenge:
 
@@ -74,5 +74,32 @@ Every close bracket has a corresponding open bracket of the same type.
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`return !stack.length;`
 <br/>
 `};`
+<br/>
+<br/>
+
+## Explanation:
+
+I've created a function called `isValid` that checks whether a string contains valid pairs of brackets. 
+<br/>
+
+The function initializes an empty array called `stack` to serve as a stack data structure. It also defines a map object called `map` that maps opening brackets to their corresponding closing brackets.
+<br/>
+
+A `for` loop is used to iterate through each character in the input string. Inside the loop, the current character is assigned to the variable `c`.
+<br/>
+
+If `c` exists as a key in the `map` object, it means it is an opening bracket. In this case, the corresponding closing bracket is pushed onto the stack.
+<br/>
+
+If `c` is not an opening bracket, it is checked whether it matches the topmost element in the stack (the last opening bracket encountered). If they don't match, it means the brackets are not balanced, and the function returns `false`.
+<br/>
+
+After the loop finishes, if there are any remaining elements in the stack, it means there were opening brackets without corresponding closing brackets. In this case, the function returns `false`.
+<br/>
+
+If the stack is empty, it means all opening brackets had corresponding closing brackets, and the function returns `true`.
+<br/>
+
+In summary, this function checks whether a given string contains valid pairs of brackets by using a stack data structure. It iterates through the string, pushing opening brackets onto the stack and checking if closing brackets match the topmost element in the stack. If the brackets are balanced, the function returns `true`; otherwise, it returns `false`.
 <br/>
 <br/>
