@@ -36,10 +36,7 @@ Explanation: s becomes 'c' while t becomes 'b'.
 
 ### Constraints
 
-```JavaScript
-1 <= s.length, t.length <= 200
-```
-
+- `1 <= s.length, t.length <= 200`
 - `s` and `t` only contain lowercase letters and `'#'` characters.
 
 <br/>
@@ -82,3 +79,22 @@ The `backspaceCompare` function then calls the `strip` function with the string 
 In summary, the `backspaceCompare` function compares two strings after applying a backspace operation to each of them. It uses an inner function called `strip` to remove characters preceded by a backspace symbol from a string. The function returns true if the stripped strings are equal, and false otherwise.
 <br/>
 <br/>
+<br/>
+<br/>
+
+### :next_track_button: [Next (Score of Parentheses)][Next]
+<br/>
+
+### :previous_track_button: [Previous (Next Greater Element)][Previous]
+<br/>
+
+### :play_or_pause_button: [More Stack Challenges][More]
+<br/>
+
+### :eject_button: [Return to Course Outline][Return]
+<br/>
+
+[Next]: https://github.com/Superklok/JavaScriptStacks/blob/main/JavaScriptScoreOfParentheses.md
+[Previous]: https://github.com/Superklok/JavaScriptStacks/blob/main/JavaScriptNextGreaterElement.md
+[More]: https://github.com/Superklok/JavaScriptStacks
+[Return]: https://github.com/Superklok/LearnJavaScript

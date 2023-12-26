@@ -61,10 +61,7 @@ Explanation: '1' - Add 1 to the record, record is now [1].
 
 ### Constraints
 
-```JavaScript
-1 <= operations.length <= 1000
-```
-
+- `1 <= operations.length <= 1000`
 - `operations[i]` is `'C'`, `'D'`, `'+'`, or a string representing an integer in the range `[-3 * 10⁴, 3 * 10⁴]`.
 - For operation `'+'`, there will always be at least two previous scores on the record.
 - For operations `'C'` and `'D'`, there will always be at least one previous score on the record.
@@ -142,3 +139,22 @@ The final sum is returned as the result of the `calPoints` function.
 In summary, this function performs various operations (double, remove, add, or push a number) on a stack based on the values in the `ops` array. It maintains the stack and calculates the sum of all the values in the stack, which is then returned as the output of the function.
 <br/>
 <br/>
+<br/>
+<br/>
+
+### :next_track_button: [Next (Next Greater Element)][Next]
+<br/>
+
+### :previous_track_button: [Previous (Valid Parentheses)][Previous]
+<br/>
+
+### :play_or_pause_button: [More Stack Challenges][More]
+<br/>
+
+### :eject_button: [Return to Course Outline][Return]
+<br/>
+
+[Next]: https://github.com/Superklok/JavaScriptStacks/blob/main/JavaScriptNextGreaterElement.md
+[Previous]: https://github.com/Superklok/JavaScriptStacks/blob/main/JavaScriptValidParentheses.md
+[More]: https://github.com/Superklok/JavaScriptStacks
+[Return]: https://github.com/Superklok/LearnJavaScript

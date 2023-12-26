@@ -38,12 +38,10 @@ Explanation: The next greater element for each value of nums1 is as follows:
 
 ### Constraints
 
-```JavaScript
-1 <= nums1.length <= nums2.length <= 1000
-0 <= nums1[i], nums2[i] <= 10⁴
-All integers in nums1 and nums2 are unique.
-All the integers of nums1 also appear in nums2.
-```
+- `1 <= nums1.length <= nums2.length <= 1000`
+- `0 <= nums1[i], nums2[i] <= 10⁴`
+- All integers in `nums1` and `nums2` are unique.
+- All the integers of `nums1` also appear in `nums2`.
 
 <br/>
 
@@ -94,3 +92,22 @@ Finally, a new array is returned by using the `map` method on the `nums1` array.
 In summary, this function finds the next greater element for each element in `nums1` from the corresponding position in `nums2`. It achieves this by using a stack to keep track of elements in `nums2` and an object to store the next greater elements. The resulting values are returned as a new array.
 <br/>
 <br/>
+<br/>
+<br/>
+
+### :next_track_button: [Next (Backspace String Compare)][Next]
+<br/>
+
+### :previous_track_button: [Previous (Baseball Game)][Previous]
+<br/>
+
+### :play_or_pause_button: [More Stack Challenges][More]
+<br/>
+
+### :eject_button: [Return to Course Outline][Return]
+<br/>
+
+[Next]: https://github.com/Superklok/JavaScriptStacks/blob/main/JavaScriptBackspaceStringCompare.md
+[Previous]: https://github.com/Superklok/JavaScriptStacks/blob/main/JavaScriptBaseballGame.md
+[More]: https://github.com/Superklok/JavaScriptStacks
+[Return]: https://github.com/Superklok/LearnJavaScript

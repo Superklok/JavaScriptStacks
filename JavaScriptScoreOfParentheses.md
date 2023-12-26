@@ -37,10 +37,7 @@ Output: 2
 
 ### Constraints
 
-```JavaScript
-2 <= s.length <= 50
-```
-
+- `2 <= s.length <= 50`
 - `s` consists of only `'('` and `')'`.
 - `s` is a balanced parentheses string.
 
@@ -94,3 +91,22 @@ After the loop ends, the final calculated `score` is returned as the output of t
 In summary, this function calculates the score of a valid parentheses sequence by keeping track of the depth of the parentheses. The score is calculated based on the depth, with higher depths contributing more to the score.
 <br/>
 <br/>
+<br/>
+<br/>
+
+### :next_track_button: [Next (Add Two Numbers)][Next]
+<br/>
+
+### :previous_track_button: [Previous (Backspace String Compare)][Previous]
+<br/>
+
+### :play_or_pause_button: [More Stack Challenges][More]
+<br/>
+
+### :eject_button: [Return to Course Outline][Return]
+<br/>
+
+[Next]: https://github.com/Superklok/JavaScriptLinkedLists/blob/main/JavaScriptAddTwoNumbers.md
+[Previous]: https://github.com/Superklok/JavaScriptStacks/blob/main/JavaScriptBackspaceStringCompare.md
+[More]: https://github.com/Superklok/JavaScriptStacks
+[Return]: https://github.com/Superklok/LearnJavaScript

@@ -37,10 +37,7 @@ Output: false
 
 ### Constraints
 
-```JavaScript
-1 <= s.length <= 10⁴
-```
-
+- `1 <= s.length <= 10⁴`
 - `s` consists of parentheses only `'()[]{}'`.
 
 <br/>
@@ -98,3 +95,22 @@ If the stack is empty, it means all opening brackets had corresponding closing b
 In summary, this function checks whether a given string contains valid pairs of brackets by using a stack data structure. It iterates through the string, pushing opening brackets onto the stack and checking if closing brackets match the topmost element in the stack. If the brackets are balanced, the function returns `true`; otherwise, it returns `false`.
 <br/>
 <br/>
+<br/>
+<br/>
+
+### :next_track_button: [Next (Baseball Game)][Next]
+<br/>
+
+### :previous_track_button: [Previous (Median of Two Sorted Arrays)][Previous]
+<br/>
+
+### :play_or_pause_button: [More Stack Challenges][More]
+<br/>
+
+### :eject_button: [Return to Course Outline][Return]
+<br/>
+
+[Next]: https://github.com/Superklok/JavaScriptStacks/blob/main/JavaScriptBaseballGame.md
+[Previous]: https://github.com/Superklok/JavaScriptDivideAndConquer/blob/main/JavaScriptMedianOfTwoSortedArrays.md
+[More]: https://github.com/Superklok/JavaScriptStacks
+[Return]: https://github.com/Superklok/LearnJavaScript
