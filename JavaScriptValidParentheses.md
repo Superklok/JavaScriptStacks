@@ -53,7 +53,7 @@ const isValid = (s) => {
             '{': '}'
         };
 
-        for (let i = 0 ; i < s.length ; i++) {
+        for (let i = 0; i < s.length; i++) {
         let c = s[i];
 
         if (map[c]) {
